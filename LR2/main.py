@@ -68,7 +68,7 @@ for epoch in range(10):
         network.update_w(error)
 
 print()
-image = np.array(Image.open("Name/А.png").convert("L"))
+image = np.array(Image.open("Test.png").convert("L"))
 image[image < 255] = 1
 image[image == 255] = 0
 network.fit(image.flatten())
